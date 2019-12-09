@@ -1,0 +1,171 @@
+/* --- EASYDROPDOWN DEFAULT THEME --- */
+
+/* PREFIXED CSS */
+
+.dropdown, .dropdown div, .dropdown li, .dropdown div::after {
+	-webkit-transition: all 150ms ease-in-out;
+	-moz-transition: all 150ms ease-in-out;
+	-ms-transition: all 150ms ease-in-out;
+	transition: all 150ms ease-in-out;
+}
+.dropdown .selected::after,.dropdown.scrollable div::after{
+	-webkit-pointer-events: none;
+	-moz-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+}
+
+/* WRAPPER */
+
+.dropdown {
+	position: relative;
+	width: 120px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.dropdown.open {
+	z-index: 20;
+}
+
+/* CARAT */
+
+.dropdown .carat {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	margin-top: -4px;
+	border: 6px solid transparent;
+	border-top: 8px solid #E64444;
+}
+.dropdown.open .carat {
+	margin-top: -10px;
+	border-top: 6px solid transparent;
+	border-bottom: 8px solid #E64444;
+}
+.dropdown.disabled .carat {
+	border-top-color: #999;
+}
+
+/* OLD SELECT (HIDDEN) */
+
+.dropdown .old {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
+.dropdown select {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.dropdown.touch .old {
+	width: 100%;
+	height: 100%;
+}
+.dropdown.touch select {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+/* SELECTED FEEDBACK ITEM */ 
+
+.dropdown .selected,.dropdown li {
+	display: block;
+	height: 20px;
+	padding: 5px 0;
+	line-height: 1;
+	line-height: 20px;
+	font-size: inherit;
+	white-space: nowrap;
+	color: #000;
+}
+.dropdown .selected {
+	padding-left: 10px;
+}
+.dropdown.disabled .selected {
+	color: #999;
+}
+.dropdown .selected::after {
+	content: '';
+	position: absolute;
+	width: 60px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+}
+
+/* DROP DOWN WRAPPER */
+
+.dropdown div {
+	position: absolute;
+	overflow: hidden;
+	height: 0;
+	top: 34px;
+	right: 0;
+	left: -2px;
+	margin-top: -1px;
+	background: #FFF;
+	border: 2px solid #999;
+	opacity: 0;
+}
+
+/* Height is adjusted by JS on open */
+
+.dropdown.open div {
+	opacity: 1;
+	z-index: 2;
+}
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+
+.dropdown.scrollable div::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+}
+
+.dropdown.scrollable.bottom div::after {
+	opacity: 0;
+}
+
+/* DROP DOWN LIST */
+
+.dropdown ul {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.dropdown.scrollable.open ul {
+	overflow-y: auto;
+}
+
+/* DROP DOWN LIST ITEMS */
+
+.dropdown li {
+	padding: 5px 10px;
+}
+
+/* .focus class is also added on hover */
+
+.dropdown li.focus{
+	position: relative;
+	background: #E64444;
+	color: #fff;
+	z-index: 3;
+}
+.dropdown li.active {
+	font-weight: 700;
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>便利超商繳費通 APP 原生頁面切版</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(window).load(function(){
+      function scroll_if_anchor(href) {
+        href = typeof(href) == "string" ? href : $(this).attr("href");
+        
+        var fromTop = 180;
+        
+        if(href.indexOf("#") == 0) {
+          var $target = $(href);
+        
+          if($target.length) {
+            $('html, body').animate({ scrollTop: $target.offset().top - fromTop });
+            if(history && "pushState" in history) {
+              history.pushState({}, document.title, window.location.pathname + href);
+              return false;
+            }
+          }
+        }
+      }
+
+      scroll_if_anchor(window.location.hash);
+
+      $("body").on("click", "a", scroll_if_anchor);
+    });
+  </script>
+</head>
+<body>
+<div class="wrapper">
+  <header>
+    <div>
+      <div class="logo">
+        <h1>便利超商繳費通</h1>
+        <span>( 尺寸：640 X 1136 Pixel ，其他版本照比例縮放 )</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#t1">形象頁</a></li>
+          <li><a href="#t2">通用</a></li>
+          <li><a href="#t3">首頁</a></li>
+          <li><a href="#t4">登入頁</a></li>
+          <li><a href="#t5">繳費頁</a></li>
+          <li><a href="#t6">系統設定</a></li>
+          <li><a href="#t7">訊息中心</a></li>
+          <li><a href="#t8">訊息內頁</a></li>
+          <li><a href="#t9">無訊息</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="page-slice clearfix" id="t1">
+    <h2>形象頁</h2>
+    <img class="slice-img" src="slice_images/app_image_main.jpg" />
+    <div class="page-help">
+      <h3>1. 形象頁圖片</h3>
+      <div class="float-wrapper clearfix">
+        <div class="float-3col">
+          <img style="width: 100%;" src="images/app_image_main.png" />
+        </div>
+        <div class="float-3col">
+          <img style="width: 100%;" src="images/app_image_01.png" />
+        </div> 
+        <div class="float-3col">
+          <img style="width: 100%;" src="images/app_image_02.png" />
+        </div>
+      </div>
+      <p>第一頁：app_image_main.png<br />(1080 x 1920px)</p>
+      <p>第二頁：app_image_01.png<br />(1080 x 1920px)</p>
+      <p>第三頁：app_image_02.png<br />(1080 x 1920px)</p>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t2">
+    <h2>通用</h2>
+    <img class="slice-img" src="slice_images/slice_default.jpg" />
+    <div class="page-help">
+      <h3>1. 頁首</h3>
+      <img style="width: 50%;" src="images/example/header.png" />
+      <p>頁首尺寸：
+        <span class="css">
+          position: relative;
+          <br />
+          height: 50px;
+          <br />
+          min-width: 320px;
+          <br />
+          text-align: center;
+          <br />
+          background: #8CB000;
+          <br />
+          -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+          <br />
+          -moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+          <br />
+          box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+        </span>
+      </p>
+      <img src="images/example/header_button.png" />
+      <p>按鈕樣式：
+        <span class="css">
+          background: #668000;
+          <br />
+          border: 1px solid #586D00;
+          <br />
+          border-radius: 4px;
+        </span>
+      </p>
+      <img src="images/example/header_button_h.png" />
+      <p>按鈕樣式（點擊後）：
+        <span class="css">
+          background: #475900;
+          <br />
+          border: 1px solid #3D4C00;
+          <br />
+          border-radius: 4px;
+        </span>
+      </p>
+      <h3>2. 選單</h3>
+      <img style="width: 50%;" src="images/example/menu.png" />
+      <p>頁首尺寸：
+        <span class="css">
+          height: 50px;
+          <br />
+          background: #FFF;
+          <br />
+          -webkit-box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.25);
+          <br />
+          -moz-box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.25);
+          <br />
+          box-shadow: inset 0 4px 2px -2px rgba(0, 0, 0, 0.25);
+        </span>
+      </p>
+      <p>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img src="images/menu_icon_home.png" />
+          <p>首頁：menu_icon_home.png<br />(48 x 48 px)</p>
+        </div>
+        <div class="float-r">
+          <img src="images/menu_icon_home_h.png" />
+          <p>首頁：menu_icon_home_h.png<br />(48 x 48 px)</p>
+        </div>
+      </div>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img src="images/menu_icon_news.png" />
+          <p>活動快報：menu_icon_news.png<br />(48 x 48 px)</p>
+        </div>
+        <div class="float-r">
+          <img src="images/menu_icon_news_h.png" />
+          <p>活動快報：menu_icon_news_h.png<br />(48 x 48 px)</p>
+        </div>
+      </div>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img src="images/menu_icon_message.png" />
+          <p>訊息中心：menu_icon_message.png<br />(48 x 48 px)</p>
+        </div>
+        <div class="float-r">
+          <img src="images/menu_icon_message_h.png" />
+          <p>訊息中心：menu_icon_message_h.png<br />(48 x 48 px)</p>
+        </div>
+      </div>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img src="images/menu_icon_setting.png" />
+          <p>系統設定：menu_icon_setting.png<br />(48 x 48 px)</p>
+        </div>
+        <div class="float-r">
+          <img src="images/menu_icon_setting_h.png" />
+          <p>系統設定：menu_icon_setting_h.png<br />(48 x 48 px)</p>
+        </div>
+      </div>
+      <img src="images/menu_button_scan.png" />
+      <p>掃描鍵：menu_button_scan.png<br />(88 x 88 px)</p>
+      <img src="images/example/menu_message.png" />
+      <p>訊息設定：
+        <span class="css">
+          width: 16px;
+          <br />
+          height: 16px;
+          <br />
+          background: #E60012;
+          <br />
+          border: 2px solid #FFF;
+          <br />
+          border-radius: 50%;
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t3">
+    <h2>首頁</h2>
+    <img class="slice-img" src="slice_images/slice_index.jpg" />
+    <div class="page-help">
+      <h3>1. 頁首</h3>
+      <p>頁首尺寸：<br />與通用設定相同</p>
+      <img style="width: 50%;" src="images/example/header_nologin.png" />
+      <p>未登入</p>
+      <img style="width: 50%;" src="images/example/header_login.png" />
+      <p>已登入</p>
+      <img src="images/header_logo.png" />
+      <p>便利超商繳費通頁首 LOGO：header_logo.png<br />(256 x 40 px)</p>
+      <img src="images/header_icon_member.png" />
+      <p>便利超商繳費通登入 ICON：header_icon_member.png<br />(48 x 48 px)</p>
+      <h3>2. 廣告</h3>
+      <p>廣告尺寸：640 x 240 px</p>
+      <img src="images/banner_prev.png" />
+      <p>返回：banner_prev.png<br />(32 x 56 px)</p>
+      <img src="images/banner_next.png" />
+      <p>往前：banner_next.png<br />(32 x 56 px)</p>
+      <h3>3. 功能列</h3>
+      <img src="images/index_icon_scan.png" />
+      <p>行動掃描：index_icon_scan.png<br />(64 x 64 px)</p>
+      <img src="images/index_icon_history.png" />
+      <p>條碼記錄：index_icon_history.png<br />(64 x 64 px)</p>
+      <img src="images/arrow_m.png" />
+      <p>箭頭 - 中尺寸：arrow_m.png<br />(24 x 40 px)</p>
+      <h3>4. 會員專屬</h3>
+      <img style="width: 140px;" src="images/index_button_bonus.png" />
+      <p>紅利專區：index_button_bonus.png<br />(280 x 200 px)</p>
+      <img style="width: 140px;" src="images/index_button_history.png" />
+      <p>購買記錄：index_button_history.png<br />(280 x 200 px)</p>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t4">
+    <h2>登入頁</h2>
+    <img class="slice-img" src="slice_images/slice_login.jpg" />
+    <div class="page-help">
+      <h3>1. 便利超商繳費通 LOGO</h3>
+      <img class="lager-img" src="images/logo.png" />
+      <p>便利超商繳費通 LOGO：logo.png<br />(480 x 224 px)</p>
+      <p>背景設定：
+        <span class="css">
+        background: #8CB000;
+        </span>
+      </p>
+      <h3>2 & 3. 帳號、密碼欄位</h3>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img src="images/login_icon_account.png" />
+          <p>帳號：login_icon_account.png<br />(32 x 32 px)</p>
+        </div>
+        <div class="float-r">
+          <img src="images/login_icon_password.png" />
+          <p>密碼：login_icon_password.png<br />(32 x 32 px)</p>
+        </div>
+      </div>
+      <p>表單尺寸：
+        <span class="css">
+          width: 100%;
+          <br />
+          background: #EEE;
+          <br />
+          border: 1px solid #CCC;
+          <br />
+          border-radius: 4px;
+          <br />
+          color: #333;
+        </span>
+      </p>
+      <h3>4. 按鈕</h3>
+      <img style="width: 50%;" src="images/example/submit_button_01.png" />
+      <p>按鈕樣式：
+        <span class="css">
+          background: #8CB000;
+          <br />
+          border-top: 2px solid #A6D000;
+          <br />
+          border-bottom: 2px solid #668000;
+          <br />
+        </span>
+      </p>
+      <img style="width: 50%;" src="images/example/submit_button_01_h.png" />
+      <p>按鈕樣式（點擊後）：
+        <span class="css">
+          background: #627B00;
+          <br />
+          border-top: 2px solid #749100;
+          <br />
+          border-bottom: 2px solid #475900;
+          <br />
+        </span>
+      </p>
+      <h3>5. 圖示</h3>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img style="width: 48px" src="images/login_icon_register.png" />
+          <p>會員註冊：login_icon_register.png<br />(96 x 96 px)</p>
+        </div>
+        <div class="float-r">
+          <img style="width: 48px" src="images/login_icon_register_h.png" />
+          <p>會員註冊：login_icon_register_h.png<br />(96 x 96 px)</p>
+        </div>
+      </div>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img style="width: 48px" src="images/login_icon_forgot.png" />
+          <p>忘記密碼：login_icon_forgot.png<br />(96 x 96 px)</p>
+        </div>
+        <div class="float-r">
+          <img style="width: 48px" src="images/login_icon_forgot_h.png" />
+          <p>忘記密碼：login_icon_forgot_h.png<br />(96 x 96 px)</p>
+        </div>
+      </div>
+      <div class="float-wrapper clearfix">
+        <div class="float-l">
+          <img style="width: 48px" src="images/login_icon_home.png" />
+          <p>進入首頁：login_icon_home.png<br />(96 x 96 px)</p>
+        </div>
+        <div class="float-r">
+          <img style="width: 48px" src="images/login_icon_home_h.png" />
+          <p>進入首頁：login_icon_home_h.png<br />(96 x 96 px)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t5">
+    <h2>繳費頁</h2>
+    <img class="slice-img" src="slice_images/slice_pay_success.jpg" />
+    <div class="page-help">
+      <h3>1. 繳費提示</h3>
+      <img src="images/pay_success.png" />
+      <p>已繳費：pay_success.png<br />(240 x 240 px)</p>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t6">
+    <h2>系統設定</h2>
+    <img class="slice-img" src="slice_images/slice_setting.jpg" />
+    <div class="page-help">
+      <h3>1. 功能列</h3>
+      <img src="images/setting_icon_notice.png" />
+      <p>推播通知：setting_icon_notice.png<br />(64 x 64 px)</p>
+      <img src="images/setting_icon_login.png" />
+      <p>會員登入：setting_icon_login.png<br />(64 x 64 px)</p>
+      <img src="images/setting_icon_password.png" />
+      <p>修改密碼：setting_icon_password.png<br />(64 x 64 px)</p>
+      <img src="images/setting_icon_report.png" />
+      <p>線上回報：setting_icon_report.png<br />(64 x 64 px)</p>
+      <img src="images/switch_on.png" />
+      <p>推播通知 - 打開：switch_on.png<br />(96 x 40 px)</p>
+      <img src="images/switch_off.png" />
+      <p>推播通知 - 關閉：switch_off.png<br />(96 x 40 px)</p>
+      <img src="images/arrow_s.png" />
+      <p>箭頭 - 小尺寸：arrow_s.png<br />(24 x 32 px)</p>
+      <h3>2. 按鈕</h3>
+      <img style="width: 50%;" src="images/example/submit_button_02.png" />
+      <p>按鈕樣式：
+        <span class="css">
+          background: #8CB000;
+          <br />
+          border-top: 2px solid #A6D000;
+          <br />
+          border-bottom: 2px solid #668000;
+          <br />
+        </span>
+      </p>
+      <img style="width: 50%;" src="images/example/submit_button_02_h.png" />
+      <p>按鈕樣式（點擊後）：
+        <span class="css">
+          background: #627B00;
+          <br />
+          border-top: 2px solid #749100;
+          <br />
+          border-bottom: 2px solid #475900;
+          <br />
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t7">
+    <h2>訊息中心</h2>
+    <img class="slice-img" src="slice_images/slice_message.jpg" />
+    <div class="page-help">
+      <h3>1. 訊息欄</h3>
+      <img src="images/arrow_s.png" />
+      <p>箭頭 - 小尺寸：arrow_s.png<br />(24 x 32 px)</p>
+      <h3>2. 訊息標題</h3>
+      <p>時間：
+        <span class="css">
+          font-size: 12px;
+          <br />
+          color: #666;
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="page-slice clearfix" id="t8">
+    <h2>訊息內頁</h2>
+    <img class="slice-img" src="slice_images/slice_message_content.jpg" />
+    <div class="page-help">
+      <h3>1. 訊息標題</h3>
+      <p>標題：
+        <span class="css">
+          font-size: 16px;
+          <br />
+          color: #005E15;
+        </span>
+      </p>
+      <p>時間：
+        <span class="css">
+          font-size: 12px;
+          <br />
+          color: #666;
+        </span>
+      </p>
+      <h3>2. 訊息內文</h3>
+      <p>時間：
+        <span class="css">color: #E60012;</span>
+      </p>
+    </div>
+  </div>  
+  <div class="page-slice clearfix" id="t9">
+    <h2>無訊息</h2>
+    <img class="slice-img" src="slice_images/slice_message_none.jpg" />
+    <div class="page-help">
+      <h3>1. 無訊息</h3>
+      <img src="images/no_message.png" />
+      <p>無訊息：no_message.png<br />(240 x 240 px)</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

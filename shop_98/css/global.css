@@ -1,0 +1,143 @@
+﻿
+/* 全區設定 Setting
+----------------------------------------------------------------------------- */
+body {min-width: 1500px;font: 62.5% "微軟正黑體", Arial, Helvetica, sans-serif;color: #555;}
+input, select {vertical-align: middle;}
+a {text-decoration: none;color: #E64444;}
+.clearfix {*zoom: 1;}
+.fix:before, .clearfix:after {display: table;line-height: 0;content: "";}
+.clearfix:after {clear: both;}
+.float_l {float: left;}
+.float_r {float: right;}
+.align_c {text-align: center;}
+.align_r {text-align: right;}
+.wrapper {width: 1100px;margin: 0 auto;}
+.placeholder {color: #AAA;}
+
+/* 圖示設定 Icon
+----------------------------------------------------------------------------- */
+i {display: inline-block;width: 16px;height: 16px;vertical-align: middle;background: url(../images/icons.png) no-repeat;}
+i.top_bar_01  {background-position: -1px -1px;}
+i.top_bar_02  {background-position: -19px -1px;}
+i.top_bar_03  {background-position: -37px -1px;}
+i.cart        {background-position: -55px -1px;}
+i.home        {background-position: -73px -1px;}
+i.nav_left_01 {background-position: -91px -1px;}
+i.nav_left_02 {background-position: -109px -1px;}
+i.nav_left_03 {background-position: -127px -1px;}
+i.nav_left_04 {background-position: -145px -1px;}
+i.nav_left_05 {background-position: -163px -1px;}
+i.nav_left_06 {background-position: -181px -1px;}
+i.nav_left_07 {background-position: -199px -1px;}
+i.nav_left_08 {background-position: -217px -1px;}
+i.footer_01   {background-position: -62px -20px;}
+i.footer_02   {background-position: -86px -20px;}
+i.footer_03   {background-position: -110px -20px;}
+i.footer_04   {background-position: -134px -20px;}
+i.next        {background-position: 0 -48px;}
+i.last        {background-position: -16px -48px;}
+i.shrink      {background-position: -32px -48px;}
+i.sidebar_01  {background-position: -55px -49px;}
+i.sidebar_02  {background-position: -73px -49px;}
+i.subpage_01  {background-position: -91px -49px;}
+i.subpage_02  {background-position: -109px -49px;}
+i.info        {background-position: -127px -49px;}
+i.facebook    {background-position: -5px -110px;}
+i.googleplus  {background-position: -75px -110px;}
+i.yahoo       {background-position: -145px -110px;}
+
+/* 按鈕設定 Button
+----------------------------------------------------------------------------- */
+a.btn {
+  display: block;
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center;
+  text-shadow: 0 -1px #790000;
+  background: rgb(235,103,117); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(235,103,117,1) 0%, rgba(230,68,68,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(235,103,117,1)), color-stop(100%,rgba(230,68,68,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(235,103,117,1) 0%,rgba(230,68,68,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(235,103,117,1) 0%,rgba(230,68,68,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(235,103,117,1) 0%,rgba(230,68,68,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(235,103,117,1) 0%,rgba(230,68,68,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#EB6775', endColorstr='#E64444',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #C00000;
+  border-radius: 4px;
+  box-shadow: 0 1px #EE95A0 inset;
+  color: #FFF;
+}
+a.btn:hover {
+  background: rgb(230,68,68); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(230,68,68,1) 0%, rgba(214,0,18,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,68,68,1)), color-stop(100%,rgba(214,0,18,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(230,68,68,1) 0%,rgba(214,0,18,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(230,68,68,1) 0%,rgba(214,0,18,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(230,68,68,1) 0%,rgba(214,0,18,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(230,68,68,1) 0%,rgba(214,0,18,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#E64444', endColorstr='#D60012',GradientType=0 ); /* IE6-9 */
+}
+
+/* 頁首 Header　& Topbar
+----------------------------------------------------------------------------- */
+.header {}
+.header_content {height: 75px;}
+.header_content h1 {display: block;float: left;width: 190px;height: 75px;text-indent: -9000px;background: url(../images/site_logo.png) no-repeat;}
+.banner {display: none;text-align: center;}
+.topbar {
+  height: 30px;
+  font-size: 1.3em;
+  background: rgb(102,102,102); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(102,102,102,1) 0%, rgba(51,51,51,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,102,102,1)), color-stop(100%,rgba(51,51,51,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(51,51,51,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(51,51,51,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(51,51,51,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(102,102,102,1) 0%,rgba(51,51,51,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
+}
+.topbar ul.login {margin-left: 15px;}
+.topbar li {float: left;height: 30px;margin-left: 5px;padding-left: 20px;line-height: 30px;background: url(../images/point.png) no-repeat 0 center;}
+.topbar li:first-child {margin: 0;padding: 0;background: none;}
+.topbar li a {color: #FFF;}
+.topbar li.cart {margin-left: 10px;padding-left: 30px;background: url(../images/cart_bg.png) no-repeat #E64444;}
+.topbar li.cart span {display: inline-block;width: 30px;height: 30px;margin: 0 10px;text-align: center;background: url(../images/icons.png) no-repeat 0 -18px;color: #E64444;}
+.topbar i {margin: -2px 5px 0 0;}
+.search_bar {float: left;height: 30px;margin: 17px 0;padding: 3px 0;font-size: 1.4em;border: 2px solid #999;}
+.search_bar:hover {border: 2px solid #E64444;}
+.select {float: left;height: 30px;margin-right: 10px;padding-right: 10px;border-right: 1px solid #CCC;}
+.search {float: left;}
+.search input, .search select {border: 0;}
+.search input[type=text] {width: 160px;height: 20px;margin: 0;padding: 5px 0;line-height: 20px;}
+.search input[type=button] {width: 26px;height: 26px;margin: 2px 5px;padding: 0;background: url(../images/icons.png) no-repeat -32px -20px;cursor: pointer;}
+.qrcode {float: right;width: 90px;height: 60px;margin: 7px 0 7px 30px;background: url(../images/header_qrcode.png) no-repeat;}
+
+/* 頁尾 Footer
+----------------------------------------------------------------------------- */
+.footer {font-size: 1.4em;background: #F5F5F5;border-top: 2px solid #555;}
+.footer i {width: 20px;height: 20px;margin: -3px 8px 0 0;}
+.footer_wrap {display: table;width: 1100px;margin: 0 auto;}
+.footer_link {display: table-cell;float: left;width: 149px;height: 160px;margin: 30px 0;padding: 0 35px;border-right: 1px solid #CCC;}
+.footer_link:first-child {width: 148px;border-left: 1px solid #CCC;}
+.footer_link h3 {margin-bottom: 15px;font-size: 1.2em;font-weight: normal;color: #E64444;}
+.footer_link ul {line-height: 24px;}
+.footer_link li {list-style: inside disc;}
+.footer_link li a {color: #555;}
+.footer_sub {height: 60px;line-height: 60px;background: #E64444;color: #FFF;}
+.footer_sub li {display: inline;padding: 0 10px;border-right: 1px solid #FFF;}
+.footer_sub li:first-child {padding-left: 0;}
+.footer_sub li a {color: #FFF;}
+.footer_sub p {margin-left: 10px;}
+.copyright {
+  height: 60px;
+  line-height: 60px;
+  background: rgb(102,102,102); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(102,102,102,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,102,102,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(102,102,102,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(102,102,102,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+.copyright p {color: #FFF;}

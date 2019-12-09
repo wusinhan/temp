@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charest="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,600&amp;display=swap"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:500,600,700"/>
+  </head>
+  <body>
+    <!-- 活動頁開始 -->
+    <div class="event-wrapper">
+      <!-- 頁首 -->
+      <section class="event-header">
+        <header>
+          <div><a target="_blank" href="https://www.facebook.com/991747590987434/posts/1470286463133542/"><img class="width-lg" src="images/20191104-november-not-alone/header-lg.jpg" alt="來建達下單，讓你 11 月不孤單，活動期間：11/11 - 11/26"/><img class="width-md" src="images/20191104-november-not-alone/header-md.jpg" alt="來建達下單，讓你 11 月不孤單，活動期間：11/11 - 11/26"/><img class="width-sm" src="images/20191104-november-not-alone/header-sm.jpg" alt="來建達下單，讓你 11 月不孤單，活動期間：11/11 - 11/26"/></a></div>
+        </header>
+      </section>
+    </div>
+    <!-- 設計 & 製作：Hank Wu (hank_wu@xander.com.tw) -->
+    <!-- 活動頁結束 -->
+  </div>
+</asp:Content>
+<asp:Content id="Content3" ContentPlaceHolderID="script" Runat="Server">
+  <!-- 滑動捲軸 -->
+  <script>
+    $(document).ready(function() {
+      $('.top-rule').click(function() {
+        // 讓捲軸移動到的位置設定
+        $('html, body').animate({
+          scrollTop: $('.rule_box').offset().top - 190
+        }, 1000);
+      });
+    });
+  </script>
+</asp:Content>

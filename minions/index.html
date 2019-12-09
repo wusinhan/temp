@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>小小兵</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="jscrollpane/jscrollpane.css">
+  <!-- JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="index-effect.js"></script>
+  <script src="jscrollpane/jscrollpane.min.js"></script>
+  <!-- 預告頁面 -->
+  <script type="text/javascript">
+    $(function(){
+      $('#trailer .close-btn,#trailer .into-btn').click(function(){
+        $('#trailer').fadeOut();
+        $('iframe').attr('src', $('iframe').attr('src'));
+      });
+    });
+  </script>
+  <!-- 活動辦法 -->
+  <script type="text/javascript">
+    $(function(){
+      $('.index-l-btn').click(function(){
+        $('#rule').fadeIn();
+        $('#rule .scroll-box').jScrollPane();
+      });
+      $('#rule .close-btn').click(function(){
+        $('#rule').fadeOut();
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- 頂層:Start -->
+  <div class="topbar">
+    <div class="outer">
+      <a href="https://tw.movies.yahoo.com/"><img src="images/yahoo-movie.png"></a>
+      <p>Yahoo 奇摩電影頻道特別企畫</p>
+      <a href="##"><img class="fb-icon" src="images/fb-icon.png"></a>
+    </div>
+  </div>
+  <!-- 頂層:End -->
+  <!-- 內容:Start -->
+  <div class="content">
+    <div class="outer">
+      <div class="wrap">
+        <div class="movie-logo">小小兵</div>
+        <div class="index-text">
+          <div class="eyeball eyeball-l"><div class="eye"></div></div>
+          <div class="eyeball eyeball-r"><div class="eye"></div></div>   
+          <div class="index-btn clearfix">
+            <a class="index-l-btn" href="##">活動辦法</a>
+            <a class="index-r-btn" href="result.html">目前投票結果</a>
+          </div>
+        </div>
+        <div class="index-join">
+          <a class="join-btn" href="evolution.html">參加票選</a>
+          <img class="index-date" src="images/index-date.png">
+        </div>
+      </div>
+    </div>
+    <div class="index-bg"></div>
+  </div>
+  <!-- 內容:End -->
+  <!-- 頁尾:Start -->
+  <div class="footer">
+    <div class="summer-blockbuster">
+      <a href="https://movie.tw.campaign.yahoo.net/2015/summer/"><img src="images/summer-blockbuster.png"></a>
+      <div class="nav">
+        <ul class="nav-left">
+          <li class="nav-01"><a href="index.html">回首頁</a></li>
+          <span></span>
+          <li class="nav-02"><a href="##">劇情簡介</a></li>
+          <span></span>
+          <li class="nav-03"><a href="##">精彩劇照</a></li>
+          <span></span>
+          <li class="nav-04"><a href="##">精彩預告</a></li>
+        </ul>
+        <ul class="nav-right">
+          <li class="nav-05"><a href="result.html">目前投票結果</a></li>
+          <span></span>
+          <li class="nav-06"><a href="##">官方粉絲團</a></li>
+          <span></span>
+          <li class="nav-07"><a href="##">官方網站</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="outer">
+      <div class="sponsor">
+        <ul>
+          <li><a href="https://tw.help.yahoo.com/kb/helpcentral">服務中心/建議</a></li>
+          <li><a href="https://info.yahoo.com/privacy/tw/yahoo/">隱私權</a></li>
+          <li><a href="https://marketing.tw.campaign.yahoo.net/emarketing/searchmarketing/">關鍵字廣告</a></li>
+          <li><a href="https://policies.yahoo.com/tw/zh-hant/yahoo/terms/utos/index.htm">服務條款</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bg"></div>
+  </div>
+  <!-- 頁尾:End -->
+  <!-- 預告頁面:Start -->
+  <div id="trailer" class="overlay">
+    <div class="box">
+      <iframe src="http://tw.campaign.yahoo.com/video/小小兵最新預告片0623-103710164.html?format=embed&player_autoplay=false" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allowtransparency="true" data-yom-embed-source="{media_id_1:7fa25235-fcab-3da8-b8e9-a9c90357ffa3}" frameborder="0" width="660" height="370"></iframe>
+      <a class="into-btn" href="##">進入網站</a>
+      <a class="close-btn" href="##">Close</a>
+    </div>
+  </div>
+  <!-- 預告頁面:End -->
+  <!-- 活動辦法:Start -->
+  <div id="rule" class="overlay">
+    <div class="box">
+      <div class="scroll-box">
+        <h2 class="title">造型大評選，你最喜歡哪個時代的小小兵？</h2>
+        <table>
+          <tr>
+            <th><label>活動期間</label></th>
+            <td>2015/6/30 (一) - 2015/7/10 (五) 中午 12 點</td>
+          </tr>
+          <tr>
+            <th><label>活動方式</label></th>
+            <td>活動期間登入 FB 帳號，從小小兵各時期的裝扮中，選出你最喜歡的小小兵 Style，投下神聖的一票並分享至 FB，就有機會抽中小小兵電影票！<br>※ 每人每天不限次數參加,參加越多次中獎機會越高，唯不得重複中獎。</td>
+          </tr>
+          <tr>
+            <th><label>活動獎勵</label></th>
+            <td>小小兵<span>【電影票 2 張】</span>Ｘ 20 組</td>
+          </tr>
+          <tr>
+            <th><label>抽獎方式</label></th>
+            <td>將於活動期間結束後 1 日內抽獎，由電腦亂數抽獎系統抽出。</td>
+          </tr>
+          <tr>
+            <th><label>公佈時間及方式</label></th>
+            <td>得獎名單將於活動期間結束後 2 日內公告於本活動頁面。</td>
+          </tr>
+          <tr>
+            <th><label>領獎與棄權</label></th>
+            <td>得獎者應於 Yahoo 奇摩通知之期限內提供完備之領獎文件，逾期視為棄權。Yahoo 奇摩將於確認領獎文件無誤後寄送贈品。</td>
+          </tr>
+          <tr>
+            <th><label>活動注意事項</label></th>
+            <td>
+              <ol>
+                <li>參加者於參加本活動之同時，即同意接受本活動之活動辦法與注意事項之規範。</li>
+                <li>如有違反，Yahoo 奇摩得取消其參加或得獎資格，並就因此所生之損害，得向參加者請求損害賠償。</li>
+                <li>參加者必須遵守 Yahoo 奇摩的服務條款、使用規範及其他交易有關之規定，如有違反，即自動喪失參加資格，如為得獎者，則喪失得獎資格。</li>
+                <li>參加者須同意接受 Yahoo 奇摩隱私權保護政策；參加者同意 Yahoo 奇摩於辦理本活動得獎聯絡事宜、活動分析或其他活動網頁上所聲明之方式及特定目的範圍內，得蒐集、處理及利用參加者所填寫之個人資料；參加者並同意 Yahoo 奇摩得委託協力廠商負責執行前述各項事務，該廠商得於必要範圍內使用參加者之個人資料；除本活動辦法另有規定外，Yahoo 奇摩關於參加者個人資料之使用及參加者之權益悉依 Yahoo 奇摩隱私權保護政策之規範。</li>
+                <li>
+                  本活動若含有網路投票機制，投票者應遵守活動之投票次數限制，不得重複投票。且如投票者有下列情形之一時，Yahoo 奇摩得取消其投票票數、參加或得獎資格，並有權將相關投票歸零計算，或啟動重新計票之機制：
+                  <ol>
+                    <li>利用電腦、網路之漏洞（如：攻擊投票程式、登入認證，及其它可認定相似之攔截行為等）進行投票者。</li>
+                    <li>採用不正當之行為（如：侵入資料庫、改封包，及其它可認定相似之駭客行為等），竄改票數或給予票數者。</li>
+                  </ol>
+                </li>
+                <li>
+                  本活動若徵求參加者提供圖文、照片、影片及其他資料等內容予 Yahoo 奇摩，參加者亦同意下列事項：
+                  <ol>
+                    <li>
+                      參加者保證提供予 Yahoo 奇摩之圖文、照片、影片及其他資料，符合下列規定，如有違反之虞，Yahoo 奇摩得立即移除相關內容，參加者並應自負法律責任：
+                      <ol>
+                        <li>並無侵害他人權利（包括但不限於智慧財產權、人格權、肖像權及隱私權等）或違反法令之情事。</li>
+                        <li>參加者擁有授權 Yahoo 奇摩依本活動辦法條款使用其所提供的內容之權利。</li>
+                      </ol>
+                    </li>
+                    <li>參加者瞭解 Yahoo 奇摩並未針對參加者所上傳的內容事先加以審查，但 Yahoo 奇摩有權（但無義務）依 Yahoo 奇摩服務條款，拒絕或移除參加。</li>
+                    <li>
+                      任何資料一經參加者上載、傳送、輸入或提供予 Yahoo 奇摩時，即表示參加者同意：
+                      <ol>
+                        <li>由 Yahoo 奇摩及其關係企業儲存或管理該資料，並由 Yahoo 奇摩及其關係企業之搜尋工具進行索引及抓取，並公開刊登、使用於 Yahoo 奇摩及其關係企業的相關系統網路及其他服務上，包括但不限於 Yahoo 奇摩所聯盟或合作的第三人網站及服務。</li>
+                        <li>永久授權 Yahoo 奇摩及其關係企業可以基於公益或為宣傳、推廣或經營 Yahoo 奇摩及其關係企業的相關系統網路及其他服務之目的，使用、修改、編輯、重製、公開播送、改作、散布、發行、公開發表、公開傳輸、公開上映、翻譯該等資料，並得在此範圍內將前述權利轉授權他人。</li>
+                      </ol>
+                    </li>
+                    <li>若 Yahoo 奇摩及其關係企業因使用、修改、編輯、重製、公開播送、改作、散布、發行、公開發表、公開傳輸、公開上映、翻譯、轉授權參加者所提供之圖文、照片、影片及其他資料遭第三人請求、索賠、提出民、刑事訴訟或主張任何法律上之權利，參加者應賠償 Yahoo 奇摩及其關係企業因此所生之全部損失與費用。</li>
+                    <li>本活動獎項若包含旅遊商品（例如：旅館住宿或機票），Yahoo 奇摩與旅遊行程之提供者無任何代理或合夥關係，有關行程中所產生糾紛或法律問題皆由旅行社負責，Yahoo 奇摩不負任何責任。</li>
+                    <li>得獎者應於 Yahoo 奇摩通知之期限內回覆確認同意領取獎品，並提供 Yahoo 奇摩所要求之完整領獎文件，逾期視為棄權。得獎者所提供之身分證明文件如與報名時所登錄資料不符（或利用 Yahoo 奇摩會員帳號參加活動時，與會員登錄資料不符），Yahoo 奇摩得要求得獎者提出相關證明文件，否則 Yahoo 奇摩得取消其得獎資格。</li>
+                    <li>參加者保證所有填寫或提出之資料均為真實且正確，且未冒用或盜用任何第三人之資料。如有不實或不正確之情事，將被取消參加或得獎資格。如因此致 Yahoo 奇摩無法通知其得獎訊息時，Yahoo 奇摩不負任何責任，且如有致損害於 Yahoo 奇摩或其他任何第三人，參加者應負一切相關責任。</li>
+                    <li>如有任何因電腦、網路、電話、技術或不可歸責於主／協辦單位之事由，而使參加者所寄出或登錄之資料有遲延、遺失、錯誤、無法辨識或毀損之情況，主／協辦單位不負任何法律責任，參加者亦不得因此異議。</li>
+                    <li>本活動獎項以公布於本網站上的資料為準，惟 Yahoo 奇摩保留更換其他等值獎項之權利。</li>
+                    <li>活動獎項價值超過新台幣 20,000 元者，得獎者應自行負擔 10% 之機會中獎所得稅。非中華民國境內居住之外籍人士不論得獎者所得之金額，須就得獎所得扣繳 20% 機會中獎所得稅。活動獎項如為現金，Yahoo 奇摩有權自應給付獎金中逕予扣除相關所得稅，現金以外之獎項，得獎者應先繳納中獎所得稅後，始得領取活動獎品。</li>
+                    <li>獎金（品）所得若超過新台幣 1,000 元，Yahoo 奇摩將於年度結算寄發扣繳所得憑單。</li>
+                    <li>參加者如因參加本活動或因活動獎項而遭受任何損失，Yahoo 奇摩及相關之母公司、子公司、關係企業、員工、及代理商不負任何責任。一旦得獎者領取獎品後，若有遺失或被竊，Yahoo 奇摩或贊助廠商等不發給任何證明或補償。</li>
+                    <li>本活動獎項寄送地區僅限台、澎、金、馬，Yahoo 奇摩不處理郵寄獎品至海外地區之事宜。</li>
+                    <li>本活動之獎品不得轉換、轉讓或折換現金。</li>
+                    <li>Yahoo 奇摩之員工不得參加本活動。</li>
+                    <li>Yahoo 奇摩有權隨時取消、終止、修改或暫停本活動。</li>
+                    <li>若對本活動有任何疑問，歡迎來信：<br /><a href="mailto:mkt_campaign@yahoo.com.tw">mkt_campaign@yahoo.com.tw</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <th><label>電影票使用說明</label></th>
+            <td>
+              <ol>
+                <li>為保護智慧財產，不攜帶任何形式之攝錄器材進入影廳（具備錄相功能的手機亦在此限），並願意配合現場安檢人員做必要之檢查。</li>
+                <li>如您於影廳內遭查獲有盜錄事實，將請您立即離場，並沒收器材及盜錄內容外，您更將因此必須接受法律制裁，感謝您的體諒與合作。</li>
+                <li>級數以現場公告為準，請確實遵守電影分級規範。</li>
+                <li>電影票為非賣品，每張限一人使用，嚴禁兜售、販賣、複製等圖利行為。</li>
+                <li>請準時入場觀賞，電影開演後 10 分鐘後戲院影廳有權謝絕入場。</li>
+                <li>所有飲食條件煩請尊重並配合戲院規範。</li>
+              </ol>     
+            </td>
+          </tr>
+        </table>
+      </div>
+      <a class="close-btn" href="##">Close</a>
+    </div>
+  </div>
+  <!-- 活動辦法:End -->
+</body>
+</html>
