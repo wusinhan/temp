@@ -1,0 +1,118 @@
+doctype html
+html(lang='zh_tw')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+    meta(http-equiv='expires' content='0')
+    block title
+      title 寵毛網 Petsmao
+    block css
+      link(rel='stylesheet' type='text/css' href='css/style.css')
+  body
+    div.page-wrap
+      // 選單 
+      div.site-menu
+        div.user-panel
+          div.search
+            form
+              input(type='search' placeholder='站內搜尋')
+              button(type='submit')
+                svg
+                  use(xlink:href='img/symbol.svg#icon-search')
+          div.non-login.clearfix(style='display: none;')
+            span 您尚未登入！
+            a.btn-primary.btn--sm(href='javascript: void(0);') 登入
+          div.login
+            ul
+              li.dropdown
+                a.user-name(href='javascript: void(0);') 您好，<span>Anonymous</span>
+                ul.dropdown-menu.user-menu
+                  li
+                    a(href='member/member-info.html') 基本資料
+                  li
+                    a(href='javascript: void(0);') 訊息中心
+                  li
+                    a(href='javascript: void(0);') 訂單查詢
+                  li
+                    a(href='javascript: void(0);') 會員登出
+        nav.site-nav
+          ul
+            li
+              a(href='javascript: void(0);')
+                | <svg><use xlink:href='img/symbol.svg#icon-article'></use></svg>寵文章
+            li
+              a(href='javascript: void(0);')
+                | <svg><use xlink:href='img/symbol.svg#icon-shopping'></use></svg>寵購物
+            li
+              a(href='javascript: void(0);')
+                | <svg><use xlink:href='img/symbol.svg#icon-trial'></use></svg>寵試用
+            li
+              a(href='javascript: void(0);')
+                | <svg><use xlink:href='img/symbol.svg#icon-review'></use></svg>寵評論
+      div.page
+        // 頁首 
+        header
+          h1.site-logo
+            a(href='index.html') 寵毛網 Petsmao
+          button.site-menu-btn
+            div.site-menu-btn-box
+              div
+              span
+              span
+              span
+              span
+        // 內容 
+        main
+          block content
+          // 頁尾 
+          footer
+            div.wrapper
+              nav.footer-nav
+                ul
+                  li
+                    a(href='javascript: void(0);')
+                      | 寵文章<svg><use xlink:href='img/symbol.svg#icon-longarrow-r'></use></svg>
+                  li
+                    a(href='javascript: void(0);')
+                      | 寵購物<svg><use xlink:href='img/symbol.svg#icon-longarrow-r'></use></svg>
+                  li
+                    a(href='javascript: void(0);')
+                      | 寵試用<svg><use xlink:href='img/symbol.svg#icon-longarrow-r'></use></svg>
+                  li
+                    a(href='javascript: void(0);')
+                      | 寵評測<svg><use xlink:href='img/symbol.svg#icon-longarrow-r'></use></svg>
+            div.copyright
+              div.wrapper
+                nav
+                  ul
+                    li
+                      a(href='javascript: void(0);') 關於我們
+                    li
+                      a(href='javascript: void(0);') 聯絡我們
+                    li
+                      a(href='javascript: void(0);') 購物常見問題
+                    li
+                      a(href='javascript: void(0);') 服務條款 & 隱私權
+                p <script>var date = new Date(); document.write(date.getFullYear());</script> Petsmao. Co., Ltd. All Rights Reserved.
+        // Back to Top 
+        div#back-top
+          div.back-top-wrap
+            svg
+              use(xlink:href='img/symbol.svg#icon-longarrow-t')
+            span Top
+            div.cat
+              div.eye.clearfix
+                span.eye--l
+                span.eye--r
+              span.nose
+              span.beard--l
+              span.beard--r
+    block javascript
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js')
+      // 裝置判斷 
+      script(src='js/vendor/device.min.js')
+      // 支援 SVG Sprite <use> 
+      script(src='js/vendor/svgxuse.min.js')
+      script(src='js/global.js')
+    block webfont
+      link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/earlyaccess/notosanstc.css')

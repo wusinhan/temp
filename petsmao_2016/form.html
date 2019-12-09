@@ -1,0 +1,242 @@
+<div class="row">
+  <div class="member-panel col-sm-3 col-xs-12">
+    <!-- Member Layout:Start -->
+    <%= render :partial => 'member' %>
+    <!-- Member Layout:End -->
+  </div>
+  <div class="member-info col-sm-9 col-xs-12 col-push">
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="alert alert-danger">您的帳號目前遭到停權，如有問題請向客服人員反映，謝謝！</p>
+      </div>
+    </div>
+    <div class="row">
+      <p class="notice col-xs-12"><span>&#8251;</span> 為必填項目</p>
+    </div>
+    <form role="form">
+      <div class="row">
+        <div class="form-group col-xs-12">
+          <label for="photo">頭像</label>
+          <div class="text-sm-center">
+            <div class="upload">
+              <div class="photo-img"></div>
+              <label><input type="file" name="pic" accept="image/*" id="photo" data-ut="memberimg" data-ipn="IMG" data-maxs="51200" data-minw="150" data-minh="150"><p>上傳中...</p></label>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="row">
+        <div class="form-group col-sm-6 col-xs-12">
+          <label for="name">姓名<span>&#8251;</span></label>
+          <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-6 col-xs-12">
+        <label for="nickname">暱稱<span>&#8251;</span></label>
+        <input type="text" class="form-control" id="nickname" placeholder="請輸入暱稱">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-10 col-xs-12">
+        <label for="phone">室內電話</label>
+          <div class="row">
+            <div class="col-xs-4">
+              <select name="phone-prefix" class="form-control">
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="037">037</option>
+                <option value="04">04</option>
+                <option value="049">049</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="082">082</option>
+                <option value="0836">0836</option>
+                <option value="089">089</option>
+              </select>
+            </div>
+            <div class="col-xs-8">
+              <input type="text" class="form-control" name="phone" id="phone" placeholder="請輸入室內電話">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-6 col-xs-12">
+          <label for="cellphone">行動電話<span>&#8251;</span></label>
+            <input type="tel" class="form-control" id="cellphone" name="cellphone" placeholder="請輸入行動電話">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-10 col-xs-12">
+          <label for="email">電子信箱<span>&#8251;</span></label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="請輸入電子信箱">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-6 col-xs-12">
+          <label for="birthday">生日<span>&#8251;</span></label>
+          <input type="text" class="form-control" id="birthday" name="birthday" placeholder="請輸入您的生日">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-10 col-xs-12">
+          <label for="code">地址</label>
+          <div class="row">
+            <div class="col-xs-4">
+              <input type="text" class="form-control" id="code" name="code" placeholder="郵遞區號" maxlength="3" onkeyup="value=value.replace(/[^\d]/g,'') ">
+            </div>
+            <div class="col-xs-4">
+              <select name="city" class="form-control">
+                <option>縣市</option>
+              </select>
+            </div> 
+            <div class="col-xs-4">
+              <select name="area" class="form-control">
+                <option>區域</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" class="form-control"  placeholder="請填寫完整地址以便收到贈品" name="address" id="address">
+          <p>( 大陸地區網友無需填寫地址 )</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-6 col-xs-12">
+          <label for="password">登入密碼<span>&#8251;</span></label>
+          <input type="password" class="form-control" id="password" name="password" placeholder="請輸入登入密碼">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-6 col-xs-12">
+          <label for="password-confirm">確認密碼<span>&#8251;</span></label>
+          <input type="password" class="form-control" id="password-confirm" name="password-confirm" placeholder="請再次確認密碼">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-sm-10 col-xs-12">
+          <label for="password-confirm">我的寵物資料</label>
+          <div class="row row-btn">
+            <div class="col-sm-4 col-sm-offset-0 col-xs-6 col-xs-offset-3"><a href="#edit-pet" class="btn primary-btn popup-btn">新增寵物資料</a></div>
+          </div>
+          <div class="pet-profile clearfix">
+            <div class="pet-img">
+              <img src="../img/upload-pets-photo.jpg">
+            </div>
+            <dl>
+              <dt>寵物姓名</dt>
+              <dd>ＯＯＯ</dd>
+              <dt>寵物性別</dt>
+              <dd>公</dd>
+              <dt>寵物種類</dt>
+              <dd>狗</dd>
+            </dl>
+            <a href="#edit-pet" class="btn btn-sm custom-btn">編輯</a>
+          </div>
+          <div class="pet-profile clearfix">
+            <div class="pet-img">
+              <img src="../img/upload-pets-photo.jpg">
+            </div>
+            <dl>
+              <dt>寵物姓名</dt>
+              <dd>ＯＯＯ</dd>
+              <dt>寵物性別</dt>
+              <dd>母</dd>
+              <dt>寵物種類</dt>
+              <dd>貓</dd>
+            </dl>
+            <a href="#edit-pet" class="btn btn-sm custom-btn">編輯</a>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox">我喜歡動物，但是我沒有養寵物
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="checkbox col-xs-12">
+          <label>
+            <input type="checkbox">我要訂閱電子報
+          </label>
+        </div>
+      </div>
+      <div class="row row-btn row-center">
+        <div class="col-xs-6 col-center"><a href="javascript:void(0)" class="btn facebook-btn" type="button">連結 FaceBook</a></div>
+        <div class="col-xs-6 col-center"><a href="javascript:void(0)" class="btn warning-btn" type="button">連結 Molo</a></div>
+      </div>
+      <div class="row row-btn">
+        <div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3"><a href="javascript:void(0)" class="btn btn-lg primary-btn">送出</a></div>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="edit-pet" style="display: none;">
+  <h3 class="sub-title">填寫寵物資料</h3>
+  <form class="form-horizontal">
+    <div class="form-group">
+      <label class="control-label col-sm-2 col-xs-12" for="petname">寵物姓名：</label>
+      <div class="col-sm-8 col-xs-12">
+        <input type="email" class="form-control" id="petname" name="petname" placeholder="請輸入寵物姓名">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pet-male">寵物性別：</label>
+      <div class="col-sm-10">
+        <label class="radio-inline">
+          <input type="radio" id="pet-male" name="petgender" value="male">公
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="pet-female" name="petgender" value="female">母
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="animal-1">寵物種類：</label>
+      <div class="col-sm-10"> 
+        <label class="radio-inline">
+          <input type="radio" id="animal-1" name="animal" value="dog">狗
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="animal-2" name="animal" value="cat">貓
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="animal-3" name="animal" value="rabbit">兔
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="animal-4" name="animal" value="mouse">鼠
+        </label>
+        <label class="radio-inline">
+          <input type="radio" id="animal-5" name="animal" value="bird">鳥
+        </label>
+        <div class="radio">
+          <label>
+            <input type="radio" id="animal-6" name="animal" value="other">其他
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="petbirthyear">出生年份：</label>
+      <div class="col-sm-4 col-xs-12">
+        <input type="text" class="form-control" id="petbirthyear" name="petbirthyear" placeholder="請輸入西元年">
+        <p class="pet-profile-example">範例：<script>var d = new Date(); document.write(d.getFullYear());</script></p>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="petphoto">寵物照片：</label>
+      <div class="col-sm-10">
+        <div class="upload">
+          <div class="pet-img"></div>
+          <label><input type="file" name="pic" accept="image/*" id="petphoto" data-ut="petimg" data-ipn="img" data-maxs="51200" data-minw="150" data-minh="150"><p>上傳中...</p></label>
+        </div>
+      </div>
+    </div>
+    <div class="row row-btn">
+      <div class="col-sm-4 col-sm-offset-2 col-xs-6"><a href="javascript:void(0)" class="btn btn-lg custom-btn">取消</a></div>
+      <div class="col-sm-4 col-xs-6"><a href="javascript:void(0)" class="btn btn-lg btn-primary">送出</a></div>
+    </div>
+  </form>
+</div>
