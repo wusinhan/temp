@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <title>AOC 螢幕線上報修</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/033bf347fc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1 class="site-logo">AOC 螢幕線上報修</h1>
+          <div class="menu"><a class="menu-btn" href="repair_flowchart.html"><i class="fas fa-question-circle"></i><span>維修流程說明</span></a>
+            <ul>
+              <li><a href="repair_request.html">申請線上報修</a></li>
+              <li><a href="repair_search.html">報修進度查詢</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bg"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>報修進度查詢</h2>
+          </div>
+        </div>
+        <div class="form-row row">
+          <div class="col-md-3">
+            <h3>查詢結果</h3>
+          </div>
+          <div class="col-md-9">
+            <form>
+              <div class="row">
+                <div class="col-lg-9">
+                  <div class="alert alert-warning">
+                    <div class="alert-icon"></div>
+                    <div class="alert-text">
+                      <h4>很抱歉，查無此資料！</h4>
+                      <p>請確認留存資料是否輸入正確。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-lg-6">
+                  <label for="phone">手機</label>
+                  <input id="phone" type="text" placeholder="請輸入申請報修時留存之手機號碼" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-6 col-lg-3">
+                  <button class="form-btn submit" type="sumbit">再次查詢</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">© <script>var date = new Date(); document.write(date.getFullYear());</script> Xander International Corp. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

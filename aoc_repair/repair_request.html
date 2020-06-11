@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <title>AOC 螢幕線上報修</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/033bf347fc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1 class="site-logo">AOC 螢幕線上報修</h1>
+          <div class="menu"><a class="menu-btn" href="repair_flowchart.html"><i class="fas fa-question-circle"></i><span>維修流程說明</span></a>
+            <ul>
+              <li><a href="repair_request.html">申請線上報修</a></li>
+              <li><a href="repair_search.html">報修進度查詢</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bg"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>申請線上報修<span>(※ 為必填欄位)</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <h3>注意事項</h3>
+          </div>
+          <div class="repair-rule col-md-9">
+            <div class="row">
+              <div class="col-6 col-lg-3"><span class="rule-button">維修注意事項</span></div>
+            </div>
+            <div class="rule-block">
+              <ol>
+                <li>如有任何產品問題，請撥打本公司客戶服務專線 0800-066-909，我們會竭誠提供您最好的原廠服務。</li>
+                <li>經 AOC 服務站檢測後，確認非人為損壞或因天災蟲害等造成的故障，自購買日起提供保固期內免費的維修服務，保固期請參考【產品保固期限】之說明。<br>※ 產品購買日期以購買憑證（購買發票、保證卡）作為保固期起始日，保證卡購買日期填寫不實或有偽造不實之記載、刪改、或送修產品機號與保證卡不符、產品機號遭修改、塗改、去除的情形，均視為無效，恕難提供免費服務。</li>
+                <li>雖在保固期內若有下列之狀況恕無法提供免費維修服務。
+                  <ol>
+                    <li>未能出示購買憑證或保證卡未加蓋經銷商店章者。</li>
+                    <li>使用不當、人為因素或經非本公司服務站或授權服務站維修、改裝造成故障者。</li>
+                    <li>購買後由於天災或不當安裝、運送、電壓異常、測試及研發用途、危險安裝或做為商業用途使用者。</li>
+                    <li>零件未故障，而客戶要求更換，則酌收服務及零件費用，收費標準以維修價目表為準。</li>
+                    <li>使用前請詳閱使用說明書，未按照正確方式使用，導致產品故障或造成重大事故者，將不提供保固並不負法律責任。</li>
+                  </ol>
+                </li>
+                <li>基於液晶面板製程尚無法確保 100% 無亮點或暗點之特性,恕不提供液晶面板無暗亮點保證。</li>
+                <li>超過保固期或不在保固範圍內，經檢測後不維修，報修的每項產品需酌收服務費，收費標準以維修價目表為準。</li>
+                <li>主要零件保固期間，零件免費，人損客責等不在此保固內。</li>
+                <li>對於產品維修之零件提供自維修日起三個月的自然性功能故障保固。</li>
+                <li>經檢測後，確認產品本身無任何故障，異常狀況是因外接之其他產品、附件、相關或週邊設備造成，將不適用於本服務保證。</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <form>
+          <div class="form-row row">
+            <div class="col-md-3">
+              <h3>聯絡資料</h3>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="form-row col-lg-6">
+                  <label for="name">姓名<span>※</span></label>
+                  <input id="name" type="text" placeholder="請輸入姓名" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-lg-6">
+                  <label for="mobile">手機<span>※</span></label>
+                  <input id="mobile" type="tel" placeholder="請輸入手機號碼" required>
+                </div>
+                <div class="form-row col-lg-6">
+                  <label for="telphone">市話</label>
+                  <div class="row">
+                    <div class="form-select col-3">
+                      <select>
+                        <option value="">區碼</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>037</option>
+                        <option>04</option>
+                        <option>049</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>089</option>
+                        <option>082</option>
+                        <option>0826</option>
+                        <option>0836</option>
+                      </select>
+                    </div>
+                    <div class="col-9">
+                      <input id="telphone" type="tel" placeholder="請輸入電話號碼">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col">
+                  <label for="address">地址<span>※</span></label>
+                  <div class="row">
+                    <div class="form-select col-6 col-sm-3">
+                      <select required>
+                        <option value="">請選擇縣市</option>
+                        <option>臺北市</option>
+                        <option>新北市</option>
+                        <option>基隆市</option>
+                        <option>桃園市</option>
+                        <option>新竹縣</option>
+                        <option>新竹市</option>
+                        <option>苗栗縣</option>
+                        <option>台中市</option>
+                        <option>南投縣</option>
+                        <option>彰化縣</option>
+                        <option>雲林縣</option>
+                        <option>嘉義縣</option>
+                        <option>嘉義市</option>
+                        <option>臺南市</option>
+                        <option>高雄市</option>
+                        <option>屏東縣</option>
+                        <option>宜蘭縣</option>
+                        <option>花蓮縣</option>
+                        <option>臺東縣</option>
+                        <option>澎湖縣</option>
+                        <option>金門縣</option>
+                        <option>連江縣</option>
+                      </select>
+                    </div>
+                    <div class="form-select col-6 col-sm-3">
+                      <select required>
+                        <option value="">請選擇區域</option>
+                        <option>中正區</option>
+                        <option>大同區</option>
+                        <option>中山區</option>
+                        <option>萬華區</option>
+                        <option>信義區</option>
+                        <option>松山區</option>
+                        <option>大安區</option>
+                        <option>南港區</option>
+                        <option>北投區</option>
+                        <option>內湖區</option>
+                        <option>士林區</option>
+                        <option>文山區</option>
+                      </select>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <input id="address" type="text" placeholder="請輸入住址" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-lg-6">
+                  <label for="email">電子信箱</label>
+                  <input id="email" type="email" placeholder="請輸入電子郵件信箱" required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3">
+              <h3>報修商品</h3>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="form-row col-lg-4">
+                  <label for="brand">品牌<span>※</span></label>
+                  <div class="form-select">
+                    <select id="brand" required>
+                      <option value="">請選擇品牌</option>
+                      <option>AOC</option>
+                      <option>Philips</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row col-lg-4">
+                  <label for="sort">類別<span>※</span></label>
+                  <div class="form-select">
+                    <select id="sort" required>
+                      <option value="">請選擇類別</option>
+                      <option>液晶電視</option>
+                      <option>液晶顯示器</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-lg-4">
+                  <label for="size">規格<span>※</span></label>
+                  <div class="form-select">
+                    <select id="size" required>
+                      <option value="">請選擇規格</option>
+                      <option>其他</option>
+                      <option>32</option>
+                      <option>40</option>
+                      <option>43</option>
+                      <option>50</option>
+                      <option>55</option>
+                      <option>58</option>
+                      <option>65</option>
+                      <option>70</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row col-lg-4">
+                  <label for="model">型號<span>※</span></label>
+                  <div class="form-select">
+                    <select id="model" required>
+                      <option value="">請選擇型號</option>
+                      <option>其他</option>
+                      <option>32M3080</option>
+                      <option>32M3082</option>
+                      <option>32M3390</option>
+                      <option>32M3395</option>
+                      <option>40M3080</option>
+                      <option>40M3390</option>
+                      <option>40M3395</option>
+                      <option>43U6090</option>
+                      <option>50U6090</option>
+                      <option>50U6195</option>
+                      <option>55U6090</option>
+                      <option>58U6195</option>
+                      <option>65U6080</option>
+                      <option>65U6090</option>
+                      <option>70U6195</option>
+                      <option>LE50U7570</option>
+                      <option>LE55U7570</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col">
+                  <label for="detail">報修問題簡述</label>
+                  <textarea id="detail" rows="6" placeholder="請簡單描述商品的問題"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col">
+                  <label>個資警語</label>
+                  <div class="repair-notice">
+                    <p>本公司謹提供線上報修服務，對於您所提供之個人資訊將依個人資料保護法（以下簡稱「個資法」）妥善管理並僅限於本公司所提供之服務範圍內使用，除依法有正當理由（如：依法律、命令、法院或因相關機關要求）外，未經您同意，本公司將不會主動洩漏您的姓名、地址、電子郵件信箱、以及其他依法受保護之個人資料。</p>
+                    <p>按同意鈕進入報修網頁者，表示您已詳閱並同意<strong>上述之</strong>本公司的個資條款、<strong>警語等</strong>內容，且知悉您所填寫的個人資訊將用於本公司服務。</p>
+                    <p><strong>上述條款、警語之未盡事宜，將依中華民國個人資料保護相關規定辦理。</strong></p>
+                  </div>
+                  <div class="form-checkbox">
+                    <label for="notice">我已經了解個資條款說明，並同意上述內容。
+                      <input id="notice" type="checkbox" required>
+                      <div class="checkbox-custom"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-lg-6">
+                  <label for="captcha">圖形驗證碼</label>
+                  <input id="captcha" type="text" placeholder="請輸入驗證碼" required>
+                </div>
+                <div class="form-captcha form-row col-6 col-lg-3">
+                  <div style="align-self: flex-end;width: 100%;height: 32px;background-color: #c6c6c6;"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-row col-lg-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <button class="form-btn submit" type="sumbit">送出資料</button>
+                    </div>
+                    <div class="col-6">
+                      <button class="form-btn cancel" type="reset">清除重填</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script>
+      $('.rule-button').click(function(e) {
+        $('.repair-rule').toggleClass('active');
+      });
+    </script>
+    <footer>
+      <div class="container">
+        <p class="copyright">© <script>var date = new Date(); document.write(date.getFullYear());</script> Xander International Corp. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

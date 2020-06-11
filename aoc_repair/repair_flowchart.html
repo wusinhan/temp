@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <title>AOC 螢幕線上報修</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/033bf347fc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1 class="site-logo">AOC 螢幕線上報修</h1>
+          <div class="menu"><a class="menu-btn" href="repair_flowchart.html"><i class="fas fa-question-circle"></i><span>維修流程說明</span></a>
+            <ul>
+              <li><a href="repair_request.html">申請線上報修</a></li>
+              <li><a href="repair_search.html">報修進度查詢</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bg"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>維修流程介紹</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="repair-flowchart col">
+            <div class="row justify-content-center">
+              <div class="flowchart-line-vertical col-8 col-md-3"><span class="flowchart-block origin">產品使用問題</span></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="row flowchart-zone">
+                  <div class="flowchart-line-vertical col-6 col-md-3"><a class="flowchart-block with-qrcode" href="request.html">AOC<br>網站報修</a>
+                    <div><img src="images/qrcode_xander_erepair.svg"></div>
+                  </div>
+                  <div class="flowchart-line-vertical col-6 col-md-3"><a class="flowchart-block with-qrcode" target="_blank" href="https://line.me/ti/p/%40958qznmj">AOC 大型顯示器<br>Line 業務諮詢</a>
+                    <div><img src="images/qrcode_xander_aoc_line.svg"></div>
+                  </div>
+                  <div class="flowchart-line-vertical col-6 col-md-3"><a class="flowchart-block" target="_blank" href="tel:0800066909">AOC 服務專線<br>0800-066-909</a></div>
+                  <div class="flowchart-line-vertical col-6 col-md-3"><a class="flowchart-block" target="_blank" href="mailto:aoc@xander.com.tw">客服中心信箱<br><span class="text-small">aoc@xander.com.tw</span></a></div>
+                </div>
+              </div>
+              <div class="col-6 col-md-9" style="display: flex;justify-content: center;">
+                <div class="flowchart-second-line"></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="flowchart-line-vertical col-8 col-md-3"><span class="flowchart-block">登記維修</span></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="flowchart-line-vertical col-8 col-md-3"><span class="flowchart-block">電話聯絡安排到府時間</span></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="flowchart-line-vertical col-8 col-md-3"><span class="flowchart-block">工程師到府檢測</span></div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="flowchart-line-vertical col-8 col-md-3"><span class="flowchart-block">保固判定</span></div>
+            </div>
+            <div class="row justify-content-center multi-line">
+              <div class="flowchart-line-horizontal col-6 col-md-3" style="justify-content: space-between;">
+                <div class="flowchart-second-line"></div>
+                <div class="flowchart-second-line"></div>
+              </div>
+            </div>
+            <div class="row justify-content-center multi-line">
+              <div class="flowchart-line-vertical col-6 col-md-3"><span class="flowchart-block">保固期內</span></div>
+              <div class="flowchart-line-vertical col-6 col-md-3"><span class="flowchart-block">保固期外</span></div>
+            </div>
+            <div class="row justify-content-center multi-line">
+              <div class="col-12">
+                <div class="row">
+                  <div class="flowchart-line-column col-6 col-md-3 offset-md-3"></div>
+                  <div class="flowchart-line-vertical col-6 col-md-3"><span class="flowchart-block">提供報價</span></div>
+                </div>
+              </div>
+              <div class="flowchart-line-horizontal col-6 col-md-3" style="justify-content: center;">
+                <div class="flowchart-second-line"></div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="flowchart-line-vertical last col-8 col-md-3"><span class="flowchart-block result">完成維修</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">© <script>var date = new Date(); document.write(date.getFullYear());</script> Xander International Corp. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

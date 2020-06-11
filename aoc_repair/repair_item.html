@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <title>AOC 螢幕線上報修</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/033bf347fc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1 class="site-logo">AOC 螢幕線上報修</h1>
+          <div class="menu"><a class="menu-btn" href="repair_flowchart.html"><i class="fas fa-question-circle"></i><span>維修流程說明</span></a>
+            <ul>
+              <li><a href="repair_request.html">申請線上報修</a></li>
+              <li><a href="repair_search.html">報修進度查詢</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bg"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>商品報修進度</h2>
+          </div>
+        </div>
+        <div class="form-row row">
+          <div class="col-md-3">
+            <h3>目前進度</h3>
+          </div>
+          <div class="col-md-9"> 
+            <div class="row">
+              <div class="repair-status col-12">
+                <ul>
+                  <li class="repair-status-block current">審核</li>
+                  <li class="repair-status-block">派工</li>
+                  <li class="repair-status-block">收件</li>
+                  <li class="repair-status-block">維修中</li>
+                  <li class="repair-status-block">準備寄送</li>
+                  <li class="repair-status-block">返還結案</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-9">
+                <div class="alert alert-failed">
+                  <div class="alert-icon"></div>
+                  <div class="alert-text">
+                    <h4>此商品維修案件已返回立案者或刪單！</h4>
+                    <p>若您有任何問題，請電洽客服單位，謝謝！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row row">
+          <div class="col-md-3">
+            <h3>報修商品</h3>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="form-row col-md-4">
+                <h4>報修日期</h4>
+                <div class="form-field">2020-04-01</div>
+              </div>
+              <div class="form-row col-md-8">
+                <h4>報修單號</h4>
+                <div class="form-field">RE20200401001</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-row col-md-4">
+                <h4>品牌</h4>
+                <div class="form-field">AOC</div>
+              </div>
+              <div class="form-row col-md-4">
+                <h4>類別</h4>
+                <div class="form-field">液晶顯示器</div>
+              </div>
+              <div class="form-row col-md-4">
+                <h4>型號</h4>
+                <div class="form-field">32M3080</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-row col">
+                <h4>報修問題簡述</h4>
+                <div class="form-field">螢幕使用一段時間後會開始閃爍，畫面逐漸變暗，必須要重開才會恢復正常。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row row">
+          <div class="col-md-3">
+            <h3>聯絡資料</h3>
+          </div>
+          <div class="col-md-9"> 
+            <div class="row">
+              <div class="form-row col-md-4">
+                <h4>姓名</h4>
+                <div class="form-field">王Ｏ明</div>
+              </div>
+              <div class="form-row col-md-4">
+                <h4>手機</h4>
+                <div class="form-field">0912-345-678</div>
+              </div>
+              <div class="form-row col-md-4">
+                <h4>電話</h4>
+                <div class="form-field">02-1234-5678</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-row col">
+                <h4>地址</h4>
+                <div class="form-field">台北市中正區重慶南路一段 120 號</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-row col">
+                <h4>電子信箱</h4>
+                <div class="form-field">anonymous@xander.com.tw</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-row col-6 col-lg-3">
+                <button class="form-btn submit" type="sumbit">回到查詢列表</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">© <script>var date = new Date(); document.write(date.getFullYear());</script> Xander International Corp. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  width: 740px;
+  margin: 40px auto;
+}
+
+img {
+  display: block;
+}

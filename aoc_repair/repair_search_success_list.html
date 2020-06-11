@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="expires" content="0">
+    <title>AOC 螢幕線上報修</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500&amp;display=swap">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,900">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/033bf347fc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1 class="site-logo">AOC 螢幕線上報修</h1>
+          <div class="menu"><a class="menu-btn" href="repair_flowchart.html"><i class="fas fa-question-circle"></i><span>維修流程說明</span></a>
+            <ul>
+              <li><a href="repair_request.html">申請線上報修</a></li>
+              <li><a href="repair_search.html">報修進度查詢</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header-bg"></div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>報修進度查詢</h2>
+          </div>
+        </div>
+        <div class="form-row row">
+          <div class="col-md-3">
+            <h3>查詢結果</h3>
+          </div>
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col">
+                <h4>您好，您的手機號碼為 <span>0912-345-678</span>，<br>目前可供檢視資料如下：</h4><strong class="search-total">共 <span>10 </span>筆</strong>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="search-list-table">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>報修日期</th>
+                        <th>報修單號</th>
+                        <th>品牌</th>
+                        <th>類別</th>
+                        <th>型號</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2020-04-01</td>
+                        <td> <a class="link" href="repair_item.html">RE20200401001</a></td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>32M3080</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-02</td>
+                        <td>RE20200402001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>32M3080</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-03</td>
+                        <td>RE20200403001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>40M3080</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-04</td>
+                        <td>RE20200404001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>40M3080</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-05</td>
+                        <td>RE20200405001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>LE50U7570</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-06</td>
+                        <td>RE20200406001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>LE50U7570</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-07</td>
+                        <td>RE20200407001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>LE55U7570</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-08</td>
+                        <td>RE20200408001</td>
+                        <td>AOC</td>
+                        <td>液晶顯示器</td>
+                        <td>LE55U7570</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-09</td>
+                        <td>RE20200409001</td>
+                        <td>Philips</td>
+                        <td>液晶電視</td>
+                        <td>40PFH4082</td>
+                      </tr>
+                      <tr>
+                        <td>2020-04-10</td>
+                        <td>RE20200410001</td>
+                        <td>Philips</td>
+                        <td>液晶電視</td>
+                        <td>40PFH4082</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="pagination">
+                  <ul>
+                    <li class="disable"><a href=""><i class="fas fa-angle-double-left"></i></a></li>
+                    <li class="disable"><a href=""><i class="fas fa-angle-left"></i></a></li>
+                    <li class="current"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">...</a></li>
+                    <li><a href=""> <i class="fas fa-angle-right"></i></a></li>
+                    <li><a href=""><i class="fas fa-angle-double-right"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-row col-lg-6">
+                <div class="row">
+                  <div class="col-6">
+                    <button class="form-btn cancel" type="sumbit">查詢其他資料</button>
+                  </div>
+                  <div class="col-6">
+                    <button class="form-btn cancel" type="exit">離開頁面</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p class="copyright">© <script>var date = new Date(); document.write(date.getFullYear());</script> Xander International Corp. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
